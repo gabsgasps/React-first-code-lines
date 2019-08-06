@@ -1,0 +1,29 @@
+%flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Nav {
+  @extend %flex;
+  justify-content: space-between;
+  background-color: #282c34;
+  width: 100%;
+  > img {
+    width: 100px;
+  }
+
+  > .List {
+    list-style-type: none;
+    @extend %flex;
+    >li {
+        padding: 0 20px;
+        color: white;
+        cursor: pointer;
+        text-transform: capitalize;
+        > a {
+          text-decoration: none;
+          color: white;
+        }
+    }
+  }
+}
